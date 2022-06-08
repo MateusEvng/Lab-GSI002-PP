@@ -1,4 +1,4 @@
-# Laboratório 2
+# Laboratório 2 - Entrada/Saída, Variaveis e Expressões
 
 Este laboratório já foi entregue dentro do prazo, porém, não havia feito uma pasta exclusiva para ele.
 
