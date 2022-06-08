@@ -1,2 +1,2 @@
-# LABORATÓRIO 3 - CONDICIONAIS
+# Laboratório 3 - Condicionais
 ## Arquivos não enviados na data proposta: 
