@@ -1,4 +1,4 @@
-# Laboratório 3
+# Laboratório 3 - Condicionais
 
 Este laboratório já foi entregue dentro do prazo, porém, não havia feito uma pasta exclusiva para ele.
 
