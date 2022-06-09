@@ -1,2 +1,2 @@
-# Laboratório 6 - Vetores
+# Laboratório 6 - Vetores e Matrizes
 
