@@ -78,8 +78,9 @@ int main(void) {
   //entrada do horario:
 
   //entrada do texto:
-
   printf("\nDigite um texto descrevendo o compromisso: \n");
+  setbuf(stdin, NULL);
+  //n pode esquecer do buffer
   gets(c.texto);
 
   
