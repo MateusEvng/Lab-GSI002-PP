@@ -14,42 +14,51 @@ typedef struct aluno Student;
 
 int main(void) {
 
-  int count = 5; int i, j = 0; int p1, p2, p3;
+  int count, i, j;
+  count = 5;
   Student s[count]; //vetor de 5 posições
 
-  setbuf(stdin, NULL);
-  scanf("%s", &s[1].name);
+  printf("***ESCOLA GSI002***\n\n");
 
-  /*while(i < count){
-    printf("Insira dos dados do Aluno %d: \n", (i+1));
-    printf("Nome: \n");
-    setbuf(stdin, NULL);
-    scanf("%s", &s[count].name); */
-/*
-    printf("Numero de matricula: \n");
-    printf("Modelo: 000.000.000-00\n");
-    setbuf(stdin, NULL);
-    gets(s[count].student_id);
 
-    printf("Curso: \n");
+  //entrada de dados
+
+  for (i = 0; i < count; i++)
+  {
+    printf("Insira seu nome: \n");
     setbuf(stdin, NULL);
-    gets(s[count].course);
-   
-    i++;
+    scanf("%s", s[i].name);
+
+    printf("\nInsira seu numero de matricula: \n");
+    printf("XXX.XXX.XXX-YY\n");
+    setbuf(stdin,NULL);
+    scanf("%s", s[i].student_id);
+
+    printf("\nInsira o seu curso: \n");
+    setbuf(stdin, NULL);
+    scanf("%s", s[i].course);
+
+    printf("\n");
   }
-*/
-  /*while(j<1){
-    //Print 1: Nome [p1];
-    printf("\nAluno %d: ", j+1);*/
-    for(p1 = 0; s[1].name[p1] != '\0'; p1++){
-      printf("Nome: %s.\n", s[1].name[p1]);
-    }
+
+  printf("\n");
 
 
-/*    j++;
-  }*/
+  for (j = 0; j < count; j++)
+  {
+    printf("Aluno %d: \n", j+1);
 
-  
+    //imprime nome
+    printf("Nome: %s\n", s[j].name);
+
+    //imprime matricula
+    printf("Matricula: %s\n", s[j].student_id);
+
+    //imprime curso
+    printf("Curso: %s\n", s[j].course);
+
+    printf("\n");
+  }
   
   return 0;
 }
