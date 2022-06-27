@@ -16,6 +16,7 @@ da terceira prova.
 (d) Encontre o aluno com menor média geral 
 (e) Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para 
 aprovação. 
+
 4. Faça um programa que armazene em um registro de dados (estrutura composta) os dados 
 de um funcionário de uma empresa, compostos de: Nome, Idade, Sexo (M/F), CPF, Data de 
 Nascimento,  Código  do  Setor  onde  trabalha  (0-99),  Cargo  que  ocupa  (string  de  até  30 
