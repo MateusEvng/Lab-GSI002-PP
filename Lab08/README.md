@@ -3,16 +3,26 @@
 **ENTREGA QUARTA-FEIRA 29/06**
 
 *Segunda-Feira 27/06*
-1. finalizar
-2. finalizar *finalizado 27/06*
+
+
+1. Escreva  um  trecho  de  código  para  fazer  a  criação  dos  novos  tipos  de  dados  conforme 
+solicitado abaixo: 
+- Horário: composto de hora, minutos e segundos. 
+- Data: composto de dia, mês e ano. 
+- Compromisso: composto de uma data, horário e texto que descreve o compromisso.
+
+2. Construa uma estrutura aluno com nome, número de matrıcula e curso. Leia do usuário a 
+informação de 5 alunos, armazene em vetor dessa estrutura e imprima os dados na tela. *finalizado*
 
 *Terça-Feira 28/06*
+
+
 3. Crie  uma  estrutura  representando  os  alunos  de  um  determinado  curso.  A  estrutura  deve 
-   conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota 
-  da terceira prova. 
-     (a) Permita ao usuário entrar com os dados de 5 alunos. 
-     (b) Encontre o aluno com maior nota da primeira prova. 
-    (c) Encontre o aluno com maior média geral. 
+conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota 
+da terceira prova. 
+(a) Permita ao usuário entrar com os dados de 5 alunos. 
+(b) Encontre o aluno com maior nota da primeira prova. 
+(c) Encontre o aluno com maior média geral. 
 (d) Encontre o aluno com menor média geral 
 (e) Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para 
 aprovação. 
@@ -24,6 +34,8 @@ caracteres) e Salário. Os dados devem ser digitados pelo usuário, armazenados 
 e exibidos na tela.
 
 *Quarta-Feira 29/06*
+
+
 5. Faça um programa que leia um vetor com os dados de 5 carros: marca (máximo 15 letras), 
 ano e preço. Leia um valor p e mostre as informações de todos os carros com preço menor 
 que p. Repita este processo até que seja lido um valor p = 0.
