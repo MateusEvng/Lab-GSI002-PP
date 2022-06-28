@@ -1,101 +1,158 @@
+// João M Evangelista 12011BSI277
+/*
+1. Escreva  um  trecho  de  código  para  fazer  a  criação  dos  novos  tipos  de  dados  conforme 
+solicitado abaixo: 
+- Horário: composto de hora, minutos e segundos. 
+- Data: composto de dia, mês e ano. 
+- Compromisso: composto de uma data, horário e texto que descreve o compromisso.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-struct horario{
-
-  int hora;
-  int minutos;
-  int segundos;
+struct horario
+{
+  int hour;
+  int minutes;
+  int seconds;
 };
 
-struct data{
-
-  int dia; int mes; int ano;
-
+struct data
+{
+  int day;
+  int month;
+  int year;
 };
 
-struct compromisso{
-
-  char texto[100];
+struct compromisso
+{
+  char description[150];
   struct data date;
   struct horario time;
-
 };
 
-typedef struct compromisso Compromisso;
+typedef struct horario Schedule;
 typedef struct data Data;
-typedef struct horario Horario;
+typedef struct compromisso Commitment;
 
-int main(void) {
+int main(){
 
-  Data d; Horario h; Compromisso c; int i = 0;
+  Schedule s;
+  Data d;
+  Commitment c;
+
+  char resposta;
+
+  //para evitar erros zerar todos os int's.
+
+  s.hour, s.minutes, s.seconds = 0;
+  d.day, d.month, d.year = 0;
   
-  //entrada da data:
-  printf("Insira a data do seu compromisso: \n");
-  printf("Dia: \n");
-  scanf("%d", &d.dia);
+  printf("******Agenda GSI002******\n\n");
 
-  //while verificador
-  while(d.dia > 31){
-    printf("\nO numero inserido eh invalido para dia.\n");
-    printf("Dia: \n");
-    scanf("%d", &d.dia);
+  printf("\nQual o dia do comproisso?\n");
+  printf("Insira o dia: "); scanf("%d", &d.day);
+
+  //verificação do dia. d.day n pode ser maior que 31.
+  while ((d.day > 31) || (d.day < 1))
+  {
+    printf("\n%d nao eh valido.\n", d.day);
+    printf("Deve ser inserido um numero entre 1 e 31\n\n");
+
+    printf("Insira o dia: "); scanf("%d", &d.day);
+  }
+  
+  printf("Mes: "); scanf("%d", &d.month);
+
+  //verificação do mes. d.month n pode ser maior que 12.
+  while ((d.month > 12) || (d.month < 1))
+  {
+    printf("\n%d nao eh valido para mes.\n", d.month);
+    printf("Deve ser inserido um numero entre 1 e 12\n\n");
+
+    printf("Insira o mes: "); scanf("%d", &d.month);
   }
 
-  printf("Mes: \n");
-  scanf("%d", &d.mes);
-
-  //while verificador
   /*
-    1. verificar mes inserido se eh existente
-    2. verificar se o dia inserido anteriormente é valido para o mes inserido.
-        (abril, junho, setembro e novembro) com 30 dias. 
-        (janeiro, março, maio, julho, agosto, outubro e dezembro) com 31 dias [else]
-    */
-  while((d.mes > 12) || (d.mes < 1)){
-    printf("\nO numero inserido eh invalido para mes.\n");
-    printf("Mes: \n");
-    scanf("%d", &d.mes);
+  Verificação do numero de dias de acordo com o mes. Caso d.day for maior que 28 em mês igual a 2
+  ou maior que 30 em mês igual a 4, 6, 8, 9, e 11 o algoritmo vai pedir que o usuario insira o numero 
+  dentro do intervalo proposto.
+
+  Não ha verificação quanto aos meses de 31 porque é um "senão" e já foi dado configurado anteriormente
+  o limite de valor 31 para d.day.
+  */
+
+  while ((d.month == 2 && d.day > 28) || ((d.month == 4 || d.month == 6 || d.month == 9 || d.month == 11) && d.day > 30 ))
+  {
+    printf("\n%d nao eh valido para mes %d.\n", d.day, d.month);
+    printf("\nDia nao pode ser maior que 30.\n");
+
+    printf("Insira o dia: "); scanf("%d", &d.day);
+    printf("Mes: "); scanf("%d", &d.month);
   }
 
-  while((d.dia > 28 && d.mes == 2) || (d.dia > 30 && (d.mes == 4 || d.mes == 6 || d.mes == 9 || d.mes == 11))){
-    printf("\nDia %d eh invalido para o mes inserido.\n", d.dia);
-    printf("Dia: \n");
-    scanf("%d", &d.dia);
+  printf("Ano: "); scanf("%d", &d.year);
+
+  //verificação do ano. no meu algoritmo não será possivel marcação de compromisso caso d.year seja 
+  //menor que 2022.
+
+  while (d.year < 2022)
+  {
+    printf("\nNão eh possivel agendar um compromisso no passado.\n");
+    printf("Ano: "); scanf("%d", &d.year);
   }
   
-  printf("Ano: \n");
-  scanf("%d", &d.ano);
-
-  //while verificador
-  while(d.ano < 2022){
-    printf("\nNao eh possivel agendar compromisso em anos ja findados.\n");
-    printf("Ano: \n");
-    scanf("%d", &d.ano);
-  }
-
-  //entrada do horario:
-
-  //entrada do texto:
-  printf("\nDigite um texto descrevendo o compromisso: \n");
-  setbuf(stdin, NULL);
-  //n pode esquecer do buffer
-  gets(c.texto);
-
-  
-
-  
-
-  printf("\nCompromisso agendado para %d/%d/%d!\n", d.dia, d.mes, d.ano);
-  
-  printf("Descricao: ");
-  
-  while(c.texto[i] != '\0'){
-    printf("%c", c.texto[i]);
-    i++;
-  }
+  printf("\nInsira o horario: \n");
+  printf("Hora: "); scanf("%d", &s.hour);
+  printf("Minuto: "); scanf("%d", &s.minutes);
   printf("\n");
+
+  //ainda não vi uma utilização dos segundos no algoritmo professora
+
+  printf("\nVoce deseja adicionar uma descricao do compromisso?\n");
+  printf("Y or N: ");
+  scanf(" %c", &resposta);
+
+  switch (resposta)
+  {
+  case 'Y':
+    printf("Digite a descricao: \n");
+    setbuf(stdin, NULL);
+    scanf("%s", c.description);
+    break;
+  case 'y':
+    printf("Digite a descricao: \n");
+    setbuf(stdin, NULL);
+    scanf("%s", c.description);
+    break;
+  case 'N':
+    break;
+  case 'n':
+    break;
+  default:
+    printf("Y or N: ");
+    scanf(" %c", &resposta);
+    if ((resposta == 'Y') || (resposta == 'y'))
+    {
+      printf("Digite a descricao: \n");
+      setbuf(stdin, NULL);
+      scanf("%s", c.description);
+    }
+    else{
+      break;
+    }
+    break;
+  }
+
+  //impreção do compromisso
+
+  printf("\n***Bilhete de Compromisso***\n\n");
+  printf("Data...: %d/%d/%d\n", d.day, d.month, d.year);
+  printf("Horario...: %d:%d\n", s.hour, s.minutes);
+  printf("Descricao...: %s", c.description);
   
+  //corrgir espaço
+  //duvida como preencher a estrutra dentro de compromisso.
+
   return 0;
 }

@@ -10,6 +10,8 @@ solicitado abaixo:
 - Horário: composto de hora, minutos e segundos. 
 - Data: composto de dia, mês e ano. 
 - Compromisso: composto de uma data, horário e texto que descreve o compromisso.
+*dúvida em como preencher a estrutura de estruturas.*
+*corrigir espaço da string c.description*
 
 2. Construa uma estrutura aluno com nome, número de matrıcula e curso. Leia do usuário a 
 informação de 5 alunos, armazene em vetor dessa estrutura e imprima os dados na tela. *finalizado*
@@ -27,11 +29,16 @@ da terceira prova.
 (e) Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para 
 aprovação. 
 
+*continuar o desenvolvimento do algoritmo*
+
 4. Faça um programa que armazene em um registro de dados (estrutura composta) os dados 
 de um funcionário de uma empresa, compostos de: Nome, Idade, Sexo (M/F), CPF, Data de 
 Nascimento,  Código  do  Setor  onde  trabalha  (0-99),  Cargo  que  ocupa  (string  de  até  30 
 caracteres) e Salário. Os dados devem ser digitados pelo usuário, armazenados na estrutura 
 e exibidos na tela.
+
+*verificador de genero em loop*
+*finalizar alguns pontos*
 
 *Quarta-Feira 29/06*
 
