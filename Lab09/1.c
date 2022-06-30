@@ -59,10 +59,27 @@ int main(void) {
   printf("Insira o dia: ");
   scanf("%d", &dia);
   printf("\n");
+  
+  while ((dia > 31) || (dia < 1))
+  {
+    printf("\n%d nao eh valido.\n", dia);
+    printf("Deve ser inserido um numero entre 1 e 31\n\n");
+
+    printf("Insira o dia: "); scanf("%d", &dia);
+  }
 
   printf("Insira o mes: ");
   scanf("%d", &mes);
   printf("\n");
+  
+  while ((mes > 12) || (mes < 1))
+  {
+    printf("\n%d nao eh valido para mes.\n", mes);
+    printf("Deve ser inserido um numero entre 1 e 12\n\n");
+
+    printf("Insira o mes: "); scanf("%d", &mes);
+  }
+
 
   printf("Insira o ano: ");
   scanf("%d", &ano);
