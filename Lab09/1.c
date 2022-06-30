@@ -56,7 +56,7 @@ int main(void) {
   int dia, mes, ano;
 
   printf("\n\t****DATA****\n\n");
-  printf("Insira o dia: ");
+  printf("\nInsira o dia: ");
   scanf("%d", &dia);
   printf("\n");
   
@@ -65,10 +65,10 @@ int main(void) {
     printf("\n%d nao eh valido.\n", dia);
     printf("Deve ser inserido um numero entre 1 e 31\n\n");
 
-    printf("Insira o dia: "); scanf("%d", &dia);
+    printf("\nInsira o dia: "); scanf("%d", &dia);
   }
 
-  printf("Insira o mes: ");
+  printf("\nInsira o mes: ");
   scanf("%d", &mes);
   printf("\n");
   
@@ -77,11 +77,37 @@ int main(void) {
     printf("\n%d nao eh valido para mes.\n", mes);
     printf("Deve ser inserido um numero entre 1 e 12\n\n");
 
-    printf("Insira o mes: "); scanf("%d", &mes);
+    printf("\nInsira o mes: "); scanf("%d", &mes);
   }
 
+  while ((mes == 2 && dia > 28) || ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && dia > 30 ))
+  {
+    printf("\n%d nao eh valido para mes %d.\n", dia, mes);
+    printf("\nDia nao pode ser maior que 28 para Fevereiro ou 30 para Abril, Junho, Setembro e Novembro.\n");
 
-  printf("Insira o ano: ");
+    printf("Insira o dia: "); scanf("%d", &dia);
+
+    while ((dia > 31) || (dia < 1))
+  {
+    printf("\n%d nao eh valido.\n", dia);
+    printf("Deve ser inserido um numero entre 1 e 31\n\n");
+
+    printf("\nInsira o dia: "); scanf("%d", &dia);
+  }
+    
+    printf("Mes: "); scanf("%d", &mes);
+
+    while ((mes > 12) || (mes < 1))
+  {
+    printf("\n%d nao eh valido para mes.\n", mes);
+    printf("Deve ser inserido um numero entre 1 e 12\n\n");
+
+    printf("\nInsira o mes: "); scanf("%d", &mes);
+  }
+    
+  }
+
+  printf("\nInsira o ano: ");
   scanf("%d", &ano);
   printf("\n");
 
