@@ -8,7 +8,14 @@
 
 3. Elabore uma função que receba três notas de um aluno como parâmetros e uma letra. Se a letra for A, a função deverá calcular a média aritmética das notas do aluno; se for P, deverá calcular a média ponderada, com pesos 5, 3 e 2.  
 
-4. Crie um programa que receba três valores (obrigatoriamente maiores que zero), representando as medidas dos três lados de um triângulo. Elabore funções para: (a) Determinar se eles lados formam um triangulo, sabendo que:   • O comprimento de cada lado de um triangulo é menor do que a soma dos outros dois lados. (b) Determinar e mostrar o tipo de triângulo, caso as medidas formem um triângulo. Sendo que:  • Chama-se equilátero o triângulo que tem três lados iguais.  • Denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais.  • Recebe o nome de escaleno o triangulo que tem os três lados diferentes.  
+4. Crie um programa que receba três valores (obrigatoriamente maiores que zero), representando as medidas dos três lados de um triângulo. Elabore funções para: 
+
+   (a) Determinar se eles lados formam um triangulo, sabendo que:   
+      • O comprimento de cada lado de um triangulo é menor do que a soma dos outros dois lados. 
+   (b) Determinar e mostrar o tipo de triângulo, caso as medidas formem um triângulo. Sendo que:  
+      • Chama-se equilátero o triângulo que tem três lados iguais.  
+      • Denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais.  
+      • Recebe o nome de escaleno o triangulo que tem os três lados diferentes.  
 
 5. Faça uma função chamada ‘simplifica’ que recebe como parâmetro o numerador e o denominador de uma fração. Esta função deve simplificar a fração recebida dividindo o numerador e o denominador pelo maior fator possível. Por exemplo, a fração 36/60 simplifica para 3/5 dividindo o numerador e o denominador por 12. A função deve modificar as variáveis passadas como parâmetro.  
 
