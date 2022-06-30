@@ -10,43 +10,43 @@ void mesExtenso(int x, int y, int z){
 
   switch(y){
     case 1:
-    printf("\n%d de Janeiro de %d\n", x, z);
-    break;
+      printf("\n%d de Janeiro de %d\n", x, z);
+      break;
     case 2:
-    printf("\n%d de Fevereiro de %d\n", x, z);
-    break;
+      printf("\n%d de Fevereiro de %d\n", x, z);
+      break;
     case 3:
-    printf("\n%d de Marco de %d\n", x, z);
-    break;
+      printf("\n%d de Marco de %d\n", x, z);
+      break;
     case 4:
-    printf("\n%d de Abril de %d\n", x, z);
-    break;
+      printf("\n%d de Abril de %d\n", x, z);
+      break;
     case 5:
-    printf("\n%d de Maio de %d\n", x, z);
-    break;
+      printf("\n%d de Maio de %d\n", x, z);
+      break;
     case 6:
-    printf("\n%d de Junho de %d\n", x, z);
-    break;
+      printf("\n%d de Junho de %d\n", x, z);
+      break;
     case 7:
-    printf("\n%d de Julho de %d\n", x, z);
-    break;
+      printf("\n%d de Julho de %d\n", x, z);
+      break;
     case 8:
-    printf("\n%d de Agosto de %d\n", x, z);
-    break;
+      printf("\n%d de Agosto de %d\n", x, z);
+      break;
     case 9:
-    printf("\n%d de Setembro de %d\n", x, z);
-    break;
+      printf("\n%d de Setembro de %d\n", x, z);
+      break;
     case 10:
-    printf("\n%d de Outubro de %d\n", x, z);
-    break;
+      printf("\n%d de Outubro de %d\n", x, z);
+      break;
     case 11:
-    printf("\n%d de Novembro de %d\n", x, z);
-    break;
+      printf("\n%d de Novembro de %d\n", x, z);
+      break;
     case 12:
-    printf("\n%d de Dezembro de %d\n", x, z);
-    break;
+      printf("\n%d de Dezembro de %d\n", x, z);
+      break;
     default:
-    printf("\nERRO\n\n");
+      printf("\nERRO\n\n");
   }
   
 }
