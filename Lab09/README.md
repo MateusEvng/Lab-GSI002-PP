@@ -12,6 +12,7 @@
 
    (a) Determinar se eles lados formam um triangulo, sabendo que:   
       • O comprimento de cada lado de um triangulo é menor do que a soma dos outros dois lados. 
+   
    (b) Determinar e mostrar o tipo de triângulo, caso as medidas formem um triângulo. Sendo que:  
       • Chama-se equilátero o triângulo que tem três lados iguais.  
       • Denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais.  
