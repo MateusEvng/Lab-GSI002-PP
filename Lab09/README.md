@@ -8,7 +8,7 @@
 
 3. Elabore uma função que receba três notas de um aluno como parâmetros e uma letra. Se a letra for A, a função deverá calcular a média aritmética das notas do aluno; se for P, deverá calcular a média ponderada, com pesos 5, 3 e 2.  *feito*
 
-4. Crie um programa que receba três valores (obrigatoriamente maiores que zero), representando as medidas dos três lados de um triângulo. Elabore funções para: 
+4. Crie um programa que receba três valores (obrigatoriamente maiores que zero), representando as medidas dos três lados de um triângulo. Elabore funções para: *feito*
 
    (a) Determinar se eles lados formam um triangulo, sabendo que:   
       • O comprimento de cada lado de um triangulo é menor do que a soma dos outros dois lados. 
