@@ -18,7 +18,7 @@
       • Denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais.  
       • Recebe o nome de escaleno o triangulo que tem os três lados diferentes.  
 
-5. Faça uma função chamada ‘simplifica’ que recebe como parâmetro o numerador e o denominador de uma fração. Esta função deve simplificar a fração recebida dividindo o numerador e o denominador pelo maior fator possível. Por exemplo, a fração 36/60 simplifica para 3/5 dividindo o numerador e o denominador por 12. A função deve modificar as variáveis passadas como parâmetro.  *finalizar*
+5. Faça uma função chamada ‘simplifica’ que recebe como parâmetro o numerador e o denominador de uma fração. Esta função deve simplificar a fração recebida dividindo o numerador e o denominador pelo maior fator possível. Por exemplo, a fração 36/60 simplifica para 3/5 dividindo o numerador e o denominador por 12. A função deve modificar as variáveis passadas como parâmetro.  *feito*
 
 6. Faça uma função que receba como parâmetro um vetor X de 30 elementos inteiros e retorne, também por parâmetro, dois vetores A e B. O vetor A deve conter os elementos pares de X e o vetor B, os elementos ímpares.  *finalizar*
 
