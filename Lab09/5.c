@@ -25,14 +25,20 @@ void simplifica (int a, int b){
 
     resto = (a % b);
     a = b;
-    b = resto;
-    mdc = a;
-    
+    b = resto; 
   }
+  
+  mdc = a;
+  
   temp_a = (temp_a / mdc);
   temp_b = (temp_b / mdc);
+
+  if((temp_b == 1) || (temp_b == 0))
+    printf("\nFracao simplificada: %d.", temp_a);
+  else 
+    printf("\nFracao simplificada: %d/%d.", temp_a, temp_b);
   
-  printf("\nFracao simplificada: %d/%d.", a, b);
+  
 }
 
 #include <stdio.h>
