@@ -11,6 +11,9 @@ int main(void) {
   
   int b, a = 0;
 
+  
+  printf("\n\t****LABORATORIO 10****\n\n");
+  
   printf("\nInsira um valor para A: ");
   scanf("%d", &a); printf("\n");
 
