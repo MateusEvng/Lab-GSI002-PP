@@ -7,7 +7,9 @@ usando os ponteiros. Imprima os valores das variáveis antes e após a modifica�
 
 2. Escreva um programa que contenha duas variáveis inteiras. Compare seus endereços e
 exiba:
+
   a) o maior endereço.
+  
   b) o conteúdo do maior endereço.
 
 
