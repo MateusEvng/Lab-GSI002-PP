@@ -8,10 +8,10 @@ usando os ponteiros. Imprima os valores das variáveis antes e após a modifica�
 2. Escreva um programa que contenha duas variáveis inteiras. Compare seus endereços e
 exiba:
 
-  a) o maior endereço.
+    a) o maior endereço.
   
-  b) o conteúdo do maior endereço.
-
+    b) o conteúdo do maior endereço.
+  
 
 3. Crie um programa que contenha um array de float contendo 10 elementos. Imprima o
 endereço de cada posição desse array.
