@@ -6,7 +6,7 @@ usando os ponteiros. Imprima os valores das variáveis antes e após a modifica�
 
 
 2. Escreva um programa que contenha duas variáveis inteiras. Compare seus endereços e
-exiba:
+exiba: **feito**
 
     a) o maior endereço.
   
@@ -14,8 +14,8 @@ exiba:
   
 
 3. Crie um programa que contenha um array de float contendo 10 elementos. Imprima o
-endereço de cada posição desse array.
+endereço de cada posição desse array. **feito**
 
 
 4. Crie um programa que contenha uma matriz de float contendo 3 linhas e 3 colunas. Imprima
-o endereço de cada posição dessa matriz.
+o endereço de cada posição dessa matriz. **feito**
