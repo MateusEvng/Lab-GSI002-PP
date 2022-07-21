@@ -24,10 +24,10 @@ int main(void) {
   int *pointer_b = &b;
 
   if(&pointer_a > &pointer_b)
-    printf("\nMaior endereco eh %d e seu conteudo %d.\n", &pointer_a, *pointer_a);
+    printf("\nMaior endereco eh %ld e seu conteudo %d.\n", &pointer_a, *pointer_a);
 
   else
-    printf("\nMaior endereco eh %d e seu conteudo %d.\n", &pointer_b, *pointer_b);
+    printf("\nMaior endereco eh %ld e seu conteudo %d.\n", &pointer_b, *pointer_b);
     
 
   
